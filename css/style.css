@@ -64,7 +64,7 @@ img {
 
 .main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: #2d9e95;
 	text-transform: uppercase;
 }
 
@@ -113,6 +113,11 @@ img {
 	margin-bottom: 0;
 }
 
+.name,
+.col {
+	float: left;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -124,8 +129,9 @@ img {
 		margin: 0 auto;
 	}
 
-	.name {
-		float: left;
+	.primary,
+	.secondary {
+		width: 50%;
 	}
 
 	.main-nav {
@@ -148,5 +154,28 @@ img {
 		display: table;
 		clear: both;
 	}
+
+}
+
+
+@media (min-width: 1025px) {
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary,
+	.tertiary {
+		width: 30%;
+	}
+
+
+
+
 
 }
